@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 body {
   background-color: #f6eee6;
+  font-family: "Roboto", sans-serif;
 }
 
 .row {
@@ -23,6 +24,11 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   color: #bf9b73;
+}
+@media (max-width: 480px) {
+  .row .name {
+    font-size: 24px;
+  }
 }
 .row .description {
   font-family: "Roboto", sans-serif;
@@ -65,7 +71,7 @@ body {
 }
 
 .people-row {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 .people-row p,
 .people-row span {
@@ -126,10 +132,16 @@ body {
 }
 .event-row .container-fluid .countdown .item {
   padding: 0 10px;
+  color: #614836;
 }
 .event-row .container-fluid .countdown .item .number {
   font-size: 40px;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  .event-row .container-fluid .countdown .item .number {
+    font-size: 30px;
+  }
 }
 .event-row .container-fluid .health-icon-row {
   max-width: 500px;
@@ -137,6 +149,14 @@ body {
   margin-right: auto;
 }
 
+@media (max-width: 480px) {
+  .event-row {
+    padding: 0;
+  }
+  .event-row .container-fluid {
+    padding: 60px 40px;
+  }
+}
 .gallery-row {
   padding: 0 60px;
 }
@@ -154,6 +174,11 @@ body {
   margin-bottom: 10px;
 }
 
+@media (max-width: 480px) {
+  .gallery-row {
+    padding: 0 30px;
+  }
+}
 .wallet-row {
   padding: 30px 60px;
   justify-content: flex-start;
@@ -176,6 +201,11 @@ body {
   color: #fff;
 }
 
+@media (max-width: 480px) {
+  .wallet-row {
+    padding: 30px;
+  }
+}
 .rsvp-row {
   padding: 30px 60px;
 }
@@ -227,6 +257,20 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .rsvp-row {
+    padding: 30px 0;
+  }
+  .rsvp-row .container-fluid {
+    padding: 60px;
+  }
+  .rsvp-row .container-fluid .comment .card img {
+    display: none;
+  }
+  .rsvp-row .container-fluid .comment .card .card-bottom {
+    margin-left: 0;
+  }
+}
 .navbar-bottom {
   position: fixed;
   bottom: 10px;

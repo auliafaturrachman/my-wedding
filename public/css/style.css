@@ -1,0 +1,241 @@
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+body {
+  background-color: #f6eee6;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row * {
+  text-align: center;
+}
+.row span {
+  color: #614836;
+}
+.row .name,
+.row .description {
+  display: block;
+}
+.row .name {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #bf9b73;
+}
+.row .description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.row .divider {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 100px;
+}
+.row .btn {
+  max-width: fit-content;
+  border-radius: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row .btn-primary {
+  background-color: #bf9b73;
+  border-color: #bf9b73;
+  color: #fff;
+}
+.row .btn-secondary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #bf9b73;
+}
+
+.header-row {
+  min-height: 100vh;
+}
+.header-row * .title h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+}
+.header-row * .subtitle,
+.header-row * .datetime {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.people-row {
+  padding-top: 60px;
+}
+.people-row p,
+.people-row span {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: #614836;
+}
+.people-row .couple {
+  margin-top: 60px;
+}
+.people-row .description {
+  font-family: "Roboto", sans-serif;
+}
+
+.event-row {
+  padding: 60px 60px 0 60px;
+}
+.event-row > .col {
+  padding: 0;
+}
+.event-row p {
+  font-family: "Roboto", sans-serif;
+}
+.event-row .description {
+  font-family: "Playfair Display", serif;
+  color: #614836;
+}
+.event-row .container-fluid {
+  background-color: #fff;
+  padding: 60px;
+  margin: 0;
+}
+.event-row .container-fluid .row {
+  padding: 30px 0;
+}
+.event-row .container-fluid .row:nth-child(1) {
+  padding-top: 0;
+}
+.event-row .container-fluid .card {
+  background-color: #f6eee6;
+  padding: 30px 25px;
+  border: 0;
+  border-radius: 0;
+}
+.event-row .container-fluid .card .divider {
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.event-row .container-fluid .card .description.location {
+  margin: 15px 0 25px;
+}
+.event-row .container-fluid .countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.event-row .container-fluid .countdown .item {
+  padding: 0 10px;
+}
+.event-row .container-fluid .countdown .item .number {
+  font-size: 40px;
+  font-weight: 700;
+}
+.event-row .container-fluid .health-icon-row {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-row {
+  padding: 0 60px;
+}
+.gallery-row .col-12 {
+  padding: 30px 0;
+}
+.gallery-row .col-12 .lightbox .row {
+  align-items: flex-start;
+}
+.gallery-row .col-12 .lightbox .row .col-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.gallery-row .col-12 .lightbox .row .col-3 img {
+  margin-bottom: 10px;
+}
+
+.wallet-row {
+  padding: 30px 60px;
+  justify-content: flex-start;
+}
+.wallet-row .row * {
+  text-align: left;
+}
+.wallet-row .wallet {
+  padding: 60px;
+  background-color: #bf9b73;
+  flex: 0 0 100%;
+  color: #fff;
+}
+.wallet-row .wallet .col-6:nth-child(2) {
+  justify-content: flex-end;
+  text-align: right;
+}
+.wallet-row .wallet .name,
+.wallet-row .wallet .description {
+  color: #fff;
+}
+
+.rsvp-row {
+  padding: 30px 60px;
+}
+.rsvp-row > .col {
+  padding: 0;
+}
+.rsvp-row .container-fluid {
+  background-color: #fff;
+  padding: 60px 80px;
+}
+.rsvp-row .container-fluid form {
+  padding-top: 60px;
+}
+.rsvp-row .container-fluid .btn-primary {
+  max-width: 100%;
+  width: 100%;
+}
+.rsvp-row .container-fluid .comment .card {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+}
+.rsvp-row .container-fluid .comment .card * {
+  text-align: left;
+}
+.rsvp-row .container-fluid .comment .card .card-top {
+  display: inline-flex;
+}
+.rsvp-row .container-fluid .comment .card .card-top .name,
+.rsvp-row .container-fluid .comment .card .card-top .time {
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+.rsvp-row .container-fluid .comment .card .card-top .name {
+  font-size: 16px;
+  color: #bf9b73;
+}
+.rsvp-row .container-fluid .comment .card .card-top .time {
+  font-size: 12px;
+  color: #614836;
+}
+.rsvp-row .container-fluid .comment .card .card-bottom {
+  margin-top: 8px;
+  margin-left: 62px;
+}
+.rsvp-row .container-fluid .comment .card img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.navbar-bottom {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.navbar-bottom ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

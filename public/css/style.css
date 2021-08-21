@@ -163,20 +163,23 @@ body {
 .gallery-row .col-12 {
   padding: 30px 0;
 }
-.gallery-row .col-12 .lightbox .row {
-  align-items: flex-start;
+.gallery-row .col-12 .masonry {
+  gap: 10px;
+  column-count: 4;
 }
-.gallery-row .col-12 .lightbox .row .col-3 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.gallery-row .col-12 .lightbox .row .col-3 img {
+.gallery-row .col-12 .masonry .item {
+  overflow: hidden;
   margin-bottom: 10px;
+  position: relative;
 }
 
 @media (max-width: 480px) {
   .gallery-row {
     padding: 0 30px;
+  }
+  .gallery-row .col-12 .masonry {
+    gap: 10px;
+    column-count: 2;
   }
 }
 .wallet-row {

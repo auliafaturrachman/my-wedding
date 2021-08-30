@@ -12,7 +12,6 @@ const create = async (req) => {
   try {
     let newComment = new Comment({
       name: req.body.name,
-      whatsapp: req.body.whatsapp,
       attendance: req.body.attendance,
       wishes: req.body.wishes,
     });

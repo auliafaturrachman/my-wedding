@@ -6,10 +6,6 @@ const CommentSchema = new Schema({
     type: String,
     required: true,
   },
-  whatsapp: {
-    type: String,
-    required: true,
-  },
   attendance: {
     type: String,
     required: true,
